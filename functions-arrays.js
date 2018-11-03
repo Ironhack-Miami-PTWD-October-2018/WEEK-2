@@ -1,3 +1,6 @@
+// CALLBACKS are a way to make sure certain code doesn’t execute until other 
+// code has already finished execution.
+
 // this is example of how callback functions work
 function study(what, blah){
     // setTimeout(function(){
@@ -17,9 +20,7 @@ function study(what, blah){
   // enjoy();
 
 
-  // ARRAYS
-
-  // arrays
+// ******* ARRAYS *******
 
 var theArray = ['Sandra', 'Paola', 'Will', 4, 67, true];
 // get the 2nd elem
@@ -50,7 +51,7 @@ theArray.splice(2,3);
 
 console.log(theArray);
 
-// ITERATING OVER ARRAYS
+//  - - - - - - ITERATING OVER ARRAYS  - - - - 
 
 var theArray = ['Sandra', 'Paola', 'Will', 4, 67, true];
 // using "for" loop
