@@ -46,7 +46,9 @@ const maxOfTwoNumbers = (num1, num2) => {
     }
     let sum = 0;
     for (let i=0; i< someArr.length; i++){
-      console.log(typeof someArr[i])
+      // console.log(typeof someArr[i]);
+      // we are adding "typeof" condition to reuse this function 
+      // to calculate sum of letters in the array of words
       if(typeof someArr[i] === 'string'){
         someArr[i] = someArr[i].length;
       }
@@ -60,6 +62,12 @@ const maxOfTwoNumbers = (num1, num2) => {
   const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
   
   const avg = (arr) => {
+    // here we reuse already defined sumArray() function
+    //                                 ^
+    //                                 |
+    //        ==========================
+    //        |
+    //        v
     return sumArray(arr)/arr.length;
   }
   
@@ -103,6 +111,10 @@ const maxOfTwoNumbers = (num1, num2) => {
       // if(uniqueArr.includes(array[i])){
       //   uniqueArr.push(array[i]);
       // }
+
+      // indexOf() => returns 1 (true) if the word already exists in the array
+      // indexOf() => returns -1 (false) if the word doesn't exist in the array
+      
       if(uniqueArr.indexOf(array[i]) === -1 ){
         uniqueArr.push(array[i]);
       }
@@ -134,7 +146,7 @@ const maxOfTwoNumbers = (num1, num2) => {
     'truth',
     'disobedience'
   ];
-  // doesWordExist(words4, "subse")
+  // doesWordExist(words4, "subse") => false
   
   const words5 = [
     'machine',
@@ -150,6 +162,8 @@ const maxOfTwoNumbers = (num1, num2) => {
     'matter'
   ];
   
+  // anyArray => the array we pass in which we are looking for some word
+  // theWord => the word we are looking for
   const howManyTimes = (anyArray, theWord) => {
     let count = 0;
     for (let i=0; i< anyArray.length; i++){
