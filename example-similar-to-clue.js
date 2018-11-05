@@ -10,11 +10,11 @@ function randomElement(someArray){
   return someArray[indexOfRandomEl];
 }
 randomElement(grades);
-var gradeBook = [];
+const gradeBook = [];
 function getGradeBook (){
-  var randomStudent = randomElement(students);
-  var randomSubject = randomElement(subjects);
-  var randomGrade = randomElement(grades);
+  const randomStudent = randomElement(students);
+  const randomSubject = randomElement(subjects);
+  const randomGrade = randomElement(grades);
   gradeBook.push(randomStudent, randomSubject, randomGrade );
   return gradeBook;
 }
